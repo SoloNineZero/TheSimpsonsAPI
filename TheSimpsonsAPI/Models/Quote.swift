@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quotes: Decodable {
+struct Quotes {
     let quote: String
     let character: String
     let image: String
