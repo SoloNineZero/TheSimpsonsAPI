@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-eA-dkk">
-                                <rect key="frame" x="177.66666666666666" y="456" width="20" height="20"/>
+                                <rect key="frame" x="177.66666666666666" y="396" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-Ds-f6B">
                                 <rect key="frame" x="20" y="684" width="335" height="54"/>
@@ -71,17 +71,17 @@
                             <constraint firstItem="8bK-Ya-rsQ" firstAttribute="top" secondItem="n9y-bg-hjw" secondAttribute="bottom" constant="10" id="3gO-eJ-Led"/>
                             <constraint firstItem="n9y-bg-hjw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="44U-Wt-q2z"/>
                             <constraint firstItem="gAc-sr-ysa" firstAttribute="centerY" secondItem="n9y-bg-hjw" secondAttribute="centerY" id="5gb-hv-sBd"/>
-                            <constraint firstItem="bZQ-eA-dkk" firstAttribute="centerX" secondItem="8bK-Ya-rsQ" secondAttribute="centerX" id="7rO-57-xZh"/>
                             <constraint firstItem="8bK-Ya-rsQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CVZ-gC-dY0"/>
                             <constraint firstItem="Nb9-Ds-f6B" firstAttribute="top" secondItem="e6J-5K-vFv" secondAttribute="bottom" constant="30" id="HjY-fc-ysu"/>
                             <constraint firstItem="Nb9-Ds-f6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IMf-TI-FxC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bK-Ya-rsQ" secondAttribute="trailing" constant="20" id="Lkr-7Z-mCp"/>
+                            <constraint firstItem="bZQ-eA-dkk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rdk-EC-ooW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nb9-Ds-f6B" secondAttribute="trailing" constant="20" id="bIE-ed-kya"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n9y-bg-hjw" secondAttribute="trailing" constant="20" id="bcz-kO-GtS"/>
-                            <constraint firstItem="8bK-Ya-rsQ" firstAttribute="centerY" secondItem="bZQ-eA-dkk" secondAttribute="centerY" constant="0.5" id="eBC-Xe-6DL"/>
                             <constraint firstItem="n9y-bg-hjw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kj8-fE-6V4"/>
                             <constraint firstItem="Nb9-Ds-f6B" firstAttribute="top" secondItem="8bK-Ya-rsQ" secondAttribute="bottom" constant="50" id="tXV-Ej-NEf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6J-5K-vFv" secondAttribute="trailing" constant="20" id="wf0-cS-Mxe"/>
+                            <constraint firstItem="bZQ-eA-dkk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yIq-30-Zv3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sTn-6K-gyF"/>
@@ -89,6 +89,7 @@
                         <outlet property="activityIndicator" destination="bZQ-eA-dkk" id="6TP-wM-2tE"/>
                         <outlet property="characterLabel" destination="e6J-5K-vFv" id="J5Y-E3-U9n"/>
                         <outlet property="photoImage" destination="8bK-Ya-rsQ" id="bCV-qq-zI2"/>
+                        <outlet property="quoteCloudImage" destination="n9y-bg-hjw" id="GJA-Eu-B26"/>
                         <outlet property="quoteLabel" destination="gAc-sr-ysa" id="1ng-WE-pdI"/>
                     </connections>
                 </viewController>

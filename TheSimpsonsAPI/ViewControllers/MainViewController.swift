@@ -11,6 +11,7 @@ import Alamofire
 final class MainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var photoImage: UIImageView!
+    @IBOutlet var quoteCloudImage: UIImageView!
     
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
@@ -20,6 +21,7 @@ final class MainViewController: UIViewController {
     
     // MARK: - Private properties
     private var quotes: [Quotes] = []
+    private var showImage = true
     private let networkManger = NetworkManager.shared
     
     // MARK: - Override Functions
@@ -27,6 +29,14 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
+        
+        quoteCloudImage.isHidden = false
+        photoImage.isHidden = false
+        quoteLabel.isHidden = false
+        characterLabel.isHidden = false
+        quoteCloudImage.isHidden = false
+        
+        showUI()
         fetchQuote()
         
         title = "The Simpsons quote"
@@ -35,6 +45,7 @@ final class MainViewController: UIViewController {
     //MARK: - IBActions
     @IBAction func nextQuoteButton() {
         activityIndicator.startAnimating()
+        showUI()
         fetchQuote()
     }
     
@@ -64,7 +75,15 @@ final class MainViewController: UIViewController {
                 }
             }
             activityIndicator.stopAnimating()
+            showUI()
         }
+    }
+    
+    private func showUI() {
+        photoImage.isHidden.toggle()
+        quoteLabel.isHidden.toggle()
+        characterLabel.isHidden.toggle()
+        quoteCloudImage.isHidden.toggle()
     }
 }
 
